@@ -11,3 +11,15 @@
 * [mp-html](https://spring.io/guides/gs/rest-service/)
 * [vue2](https://spring.io/guides/gs/rest-service/)
 * [scss](https://spring.io/guides/gs/rest-service/)
+
+### 结构
+ChatGPTAi-a 微信小程序端
+ChatGPTAi-b 服务后端
+
+### 部署方法
+1. ChatGPTAI-a env.js修改为你自己的微信开发者 APPID 包括后端地址
+2  ChatGPTAI-a application.yml中的Key 修改为OpenAI开发者Key
+
+
+### 速览 具体请上方体验码
+![Uploading 6fdc58494dfa11bbd97ab47eb639c2a.jpg…]()
