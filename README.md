@@ -21,5 +21,8 @@ ChatGPTAi-b 服务后端
 2  ChatGPTAI-a application.yml中的Key 修改为OpenAI开发者Key
 
 
-### 速览 具体请上方体验码
-![Uploading 6fdc58494dfa11bbd97ab47eb639c2a.jpg…]()
+### 速览 具体请看上方体验码
+
+![微信图片_20230215041315](https://user-images.githubusercontent.com/87460202/218851324-5d305fe9-ec42-4cac-b2d4-25f8a07f01e4.jpg)
+![微信图片_20230215041032](https://user-images.githubusercontent.com/87460202/218850871-09814075-dd21-4fa7-9d87-021668bf1478.jpg)
+![微信图片_20230215041320](https://user-images.githubusercontent.com/87460202/218851341-668aabe6-aca2-4cd1-8a7e-9c124a8e67d3.jpg)
