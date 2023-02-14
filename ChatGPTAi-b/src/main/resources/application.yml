@@ -1,0 +1,8 @@
+server:
+  port: 8000
+  ssl:
+    key-store: classpath:anchwngb.cn.pfx
+    key-store-password: 7551p5h5nfaz0
+    key-store-type: PKCS12
+gpt:
+  key: 'Bearer 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'

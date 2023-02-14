@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "OpenAi ChatGPT",
+  "enablePullDownRefresh": false,
+  "navigationBarBackgroundColor": "#000000",
+  "navigationBarTextStyle": "white",
+  "backgroundColorTop": "#000000",
+  "backgroundColorBottom": "#000000",
+  "usingComponents": {
+    "mp-html": "/components/mp-html/mp-html"
+  }
+}
