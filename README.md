@@ -1,6 +1,4 @@
 # WeChat - ChatGPT
-### 作者邮箱
-@Email mindecode003@163.com
 ### 快速体验
 ![gh_02bcd3e715fe_258.jpg](https://user-images.githubusercontent.com/87460202/218847322-c7489bd9-c701-4c42-86b0-d6a1b49c9f0f.jpg)
 ### 介绍 
