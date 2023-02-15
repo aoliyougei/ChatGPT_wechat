@@ -5,7 +5,7 @@
       <view class="me-content">
         <view class="me-box" v-for="(item,index) in data" :key="index" :id="'id-m-'+index">
           <view class="me-font" v-show="item.me.length>0">
-            <view class="text-m">
+            <view class="text-m" @click="copyInput(index)">
               {{ item.me }}
             </view>
           </view>
@@ -49,7 +49,7 @@
       <view style="display: flex">
         <view
             class="input">
-          <input placeholder="问你想问的..." style="color: white" v-model="input"/>
+          <input placeholder="问你想问的..." style="color: white;font-size: 23rpx;font-weight: 600" v-model="input"/>
         </view>
         <view class="input-img" @click="sendMessage">
           <image class="input-img-size" src="/static/send.png"/>
@@ -98,6 +98,9 @@ export default {
     }
   },
   methods: {
+    copyInput(index) {
+      this.input = this.data[index].me
+    },
     sendMessage() {
       this.canvas = true
       if (this.input.length <= 0) {
@@ -123,8 +126,19 @@ export default {
       this.input = ''
       const size = this.data.length - 1
       this.scrollInto = 'id-m-' + size;
+      const _this = this
       this.$store.dispatch('gpt/sendMessage', {"text": text}).then(res => {
-        this.data[size].gpt = res.text
+        let i = 0;
+        let timer = setInterval(function () {
+          if (i <= res.text.length) {
+            _this.data[size].gpt = res.text.slice(0, i++) + '_|'
+          } else {
+            _this.data[size].gpt = res.text
+            clearInterval(timer)
+          }
+          uni.vibrateShort()
+        }, 50);
+
         this.persistenceData()
         this.scrollInto = 'id-g-' + size;
       })
